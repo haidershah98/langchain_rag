@@ -6,5 +6,5 @@ embedding = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL)
 
 vectordb = Chroma(
     persist_directory=DB_NAME,
-    embedding_function=embeddings
+    embedding_function=embedding
 )
